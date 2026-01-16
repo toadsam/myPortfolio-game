@@ -21,10 +21,10 @@ const illustration = {
 
 const greeting = {
   username: "정재훈",
-  title: "웹을 주력으로,\n운영 문제까지 해결하는\n개발자 정재훈",
-  subTitle: `React · Spring Boot 기반 Full-Stack(Web) 개발
-인증·보안(Refresh Rotation)과 운영 이슈(HTTPS·CORS) 해결 경험
-Unity XR·게임 개발 경험 보유`,
+  title: "플레이 경험을 완성하는\nUnity 게임 개발자\n정재훈",
+  subTitle: `Unity 기반 게임 시스템 설계·구현
+조작감·피드백·UI 흐름 중심 개발
+AR/VR(XR) 프로젝트 경험 + Web(React·Spring) 연동 경험`,
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -48,14 +48,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Skills",
-  subTitle: "웹 주력 + 운영 이슈 해결 중심",
+  subTitle: "Unity 게임·XR 중심 + Web 연동 경험",
   skills: [
-    emoji("Frontend: React/TypeScript 기반 SPA 설계 및 구현"),
-    emoji("컴포넌트 구조화, 상태 흐름 설계, API 연동"),
-    emoji("Backend: Spring Boot + JPA로 REST API 설계/구현"),
-    emoji("Auth: JWT 인증/인가 + Refresh Token Rotation"),
-    emoji("Infra: AWS 배포 및 HTTPS/Mixed Content/CORS 해결"),
-    emoji("Unity XR/AR: 인터랙션 및 상태/AI 제어 경험")
+    emoji("Game Dev: Unity(C#) 기반 게임 시스템 설계·구현"),
+    emoji("Player/Enemy 상태 관리, 전투·상호작용 로직 구현"),
+     emoji("UI/UX: 인게임 UI 구성 및 플레이 흐름 개선"),
+   emoji("XR/AR/VR: 트래킹·입력 기반 인터랙션 구현 경험"),
+    emoji("Optimization: 오브젝트 풀링/충돌/레이캐스트 최적화 경험"),
+    emoji("Web(서브): React + Spring Boot 기반 서비스 개발 및 API 연동")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -180,16 +180,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Web (Frontend)",
+      Stack: "Game / XR (Unity)",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Web (Backend · Spring Boot)",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Web (Frontend · React)",
       progressPercentage: "60%"
-    },
-    {
-      Stack: "Web (Backend)",
-      progressPercentage: "80%"
-    },
-    {
-      Stack: "Game/XR",
-      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -1505,10 +1505,10 @@ const talkSection = {
 
 const podcastSection = {
   title: "About Me",
-  subtitle: `작은 기능도 끝까지 다듬어 ‘운영 가능한 상태’로 만듭니다.
-배포 후 생기는 HTTPS·CORS 같은 문제를 로그/설정/네트워크까지 파고들어 해결해왔습니다.
-저는 운영과 사용자 소통까지 이어져야 비로소 ‘완성된 개발’이라고 생각합니다.
-웹이 주력이지만, Unity XR 경험으로 인터랙션 영역도 다룰 수 있습니다.`,
+  subtitle: `아이디어를 ‘플레이’로 바꾸는 과정에 집중합니다.
+조작감·피드백·UI 흐름을 기준으로 게임 시스템을 설계하고 구현해왔습니다.
+프로토타입에서 끝내지 않고, 버그 수정과 안정화까지 거쳐 ‘완성된 빌드’로 만드는 것을 중요하게 생각합니다.
+Unity XR 경험을 바탕으로 AR/VR 인터랙션도 구현할 수 있으며, Web(React·Spring) 연동 경험도 보유하고 있습니다.`,
 
   // Please Provide with Your Podcast embeded Link
   podcast: [],
