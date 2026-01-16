@@ -1,0 +1,88 @@
+﻿@import "../../_globalColor";
+
+.values-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 180px;
+  padding: 1.25rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(160deg, rgba(20, 26, 38, 0.95), rgba(12, 16, 26, 0.95));
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  animation: valuesCardIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+.values-card.dark-mode {
+  background: linear-gradient(160deg, rgba(16, 22, 34, 0.98), rgba(10, 13, 22, 0.98));
+}
+
+.values-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: radial-gradient(circle at top left, rgba(176, 118, 255, 0.35), transparent 55%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.values-card:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  border-color: rgba(176, 118, 255, 0.6);
+}
+
+.values-card:hover::before {
+  opacity: 1;
+}
+
+.values-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: $textColorDark;
+  letter-spacing: 0.04em;
+}
+
+.values-card-summary {
+  font-size: 14px;
+  color: $subTitle;
+  line-height: 1.6;
+  opacity: 0.7;
+  transition: opacity 0.25s ease;
+}
+
+.values-card:hover .values-card-summary {
+  opacity: 1;
+}
+
+.values-card-cta {
+  margin-top: auto;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(176, 118, 255, 0.9);
+}
+
+@keyframes valuesCardIn {
+  from {
+    transform: translateY(18px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .values-card {
+    min-height: 160px;
+  }
+}
